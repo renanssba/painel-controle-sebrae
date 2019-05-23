@@ -44,6 +44,8 @@ public class VsnUIManager : MonoBehaviour {
 
   public List<VsnCharacter> characters;
 
+  public TextMeshProUGUI scoreText;
+
   void Awake() {
     if(instance == null) {
       instance = this;
@@ -95,7 +97,7 @@ public class VsnUIManager : MonoBehaviour {
       isTextAppearing = false;
       vsnMessageText.GetComponent<VsnConsoleSimulator>().FinishShowingCharacters();
     } else if(VsnController.instance.state == ExecutionState.WAITINGTOUCH) {
-      VsnAudioManager.instance.PlaySfx("ui_dialogue_advance");
+      //VsnAudioManager.instance.PlaySfx("ui_dialogue_advance");
       VsnController.instance.state = ExecutionState.PLAYING;
       ShowClickMessageIcon(false);
       ShowDialogPanel(false);

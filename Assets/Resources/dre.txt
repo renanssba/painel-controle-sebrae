@@ -1,0 +1,37 @@
+character tabela "tabela-dre-facil"
+char_alpha tabela 0 0
+char_alpha tabela 1 1
+wait 1
+//char_move_x tabela 0.7
+
+say "É assim que eu calculo o meu lucro. Vamos começar com o valor que recebi este mês:"
+say "Eu recebi R$ 4000 com a venda dos produtos. Vou colocar aqui na tabela."
+wait 0.4
+set_table_text "R$ 4000"
+wait 0.4
+
+/// PERGUNTAR SE ESSE JÁ É O LUCRO
+
+say "Em seguida, preciso tirar os impostos desse valor. Como eu sou MEI, eu tenho que pagar uma guia de impostos no valor de R$50."
+wait 0.4
+set_table_text "R$ 4000\n-R$ 50"
+wait 0.4
+
+say "Ok. Depois disso, preciso retirar o custo que eu paguei nos produtos. Foi R$ 800."
+wait 0.4
+set_table_text "R$ 4000\n-R$ 50\n-R$ 800"
+wait 0.4
+
+say "E por último, tem os meus gastos mensais que também preciso diminuir. Esses são vários."
+say "Meu salário, a conta de energia, conta de água, aluguel... Tudo que eu preciso gastar todo mês."
+say "No meu caso, isso tudo dá R$ 2200."
+wait 0.4
+set_table_text "R$ 4000\n-R$ 50\n-R$ 800\n-R$ 2200"
+wait 0.4
+
+say "Pronto! Retirando isso tudo do que eu recebi tenho meu lucro:"
+wait 0.4
+set_table_text "R$ 4000\n-R$ 50\n-R$ 800\n-R$ 2200\nR$ 950"
+wait 0.4
+
+say "R$ 950. Olha só que lucro lindo!"

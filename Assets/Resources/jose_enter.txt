@@ -1,0 +1,10 @@
+﻿character jose "jose"
+char_move_x jose 1
+if argsCount > 0
+  char_move_x jose arg1 1
+else
+  char_move_x jose 0.5 1
+endif
+anim_alpha jose 0 0
+anim_alpha jose 1 1
+wait 1

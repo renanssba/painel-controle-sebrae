@@ -1,3 +1,0 @@
-say "Testando VSN em projeto novo."
-wait 2
-say "Mais coisa"

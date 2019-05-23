@@ -24,12 +24,12 @@ namespace Command{
 
     public override void AddSupportedSignatures() {
       signatures.Add(new VsnArgType[] {
-        VsnArgType.stringArg,
+        VsnArgType.referenceArg,
         VsnArgType.numberArg
       });
 
       signatures.Add(new VsnArgType[] {
-        VsnArgType.stringArg,
+        VsnArgType.referenceArg,
         VsnArgType.numberArg,
         VsnArgType.numberArg
       });

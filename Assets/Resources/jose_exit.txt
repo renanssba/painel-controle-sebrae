@@ -1,0 +1,3 @@
+﻿char_move_x jose 0 1
+char_alpha jose 0 1
+wait 1

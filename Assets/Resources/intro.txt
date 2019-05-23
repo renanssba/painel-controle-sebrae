@@ -1,0 +1,49 @@
+
+bg "2894"
+goto_script "jose_enter"
+
+/// DEBUG TEST
+goto_script "dre"
+
+
+say "José" "Olá amigo, tudo bem? Eu sou o José da Silva, tenho 35 anos e sou empreendedor."
+say "Queria conversar com você para lhe ajudar a rentabilizar o seu negócio."
+say_auto "Você tem lucro no seu negócio?"
+
+choices "Sim" sim_1 "Não" nao_1
+waypoint sim_1
+goto q2
+
+waypoint nao_1
+say "Eita, isso é preocupante. Mas não se preocupe, eu posso te ajudar a melhorar seu controle financeiro para que possa ter lucro!"
+goto end
+
+waypoint q2
+say_auto "E você sabe de quanto é o lucro do seu negócio?"
+choices "Sim" sim_2 "Não" nao_2
+waypoint sim_2
+goto q3
+
+waypoint nao_2
+say "Eita, isso é preocupante. Mas não se preocupe, eu posso te ajudar a melhorar seu controle financeiro para que possa saber qual é seu o lucro!"
+goto end
+
+
+waypoint q3
+say_auto "Bacana. E você sabe qual é a porcentagem do seu lucro?"
+choices "Sei sim" sim_3 "Não sei" nao_3
+
+waypoint sim_3
+say "Que bom. Você é um empreendedor diferenciado. Mas vamos conversar um pouco mais, assim eu posso te ajudar a melhorar o seu controle financeiro."
+goto end
+
+waypoint nao_3
+say "Isso é algo bem importante para o seu negócio. Vamos conversar um pouco mais, assim posso te ajudar a conhecer o valor do seu lucro."
+goto end
+
+
+waypoint end
+say "Vamos começar entendendo os seus resultados."
+goto_script "dre"
+
+goto_script "jose_exit"

@@ -4,9 +4,9 @@ goto_script "jose_enter"
 
 /// DEBUG TEST
 //goto_script "dre"
-set_var coins 3000
-set_var current_coins 3000
-goto_script "return_minigame"
+// set_var coins 3000
+// set_var current_coins 3000
+// goto_script "return_minigame"
 /// DEBUG
 
 

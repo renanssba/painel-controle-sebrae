@@ -30,8 +30,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.49497475"
-     inkscape:cx="1064.2458"
-     inkscape:cy="552.13103"
+     inkscape:cx="363.15049"
+     inkscape:cy="763.74297"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -9285,5 +9285,15 @@ AAAAAAAAAAAAAAAAgENJGRrvBxIaCgAAAABJRU5ErkJggg==
        preserveAspectRatio="none"
        height="285.75"
        width="297.12708" />
+    <path
+       style="opacity:1;vector-effect:none;fill:#cccccc;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.52916664;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:fill markers stroke"
+       d="m 104.98319,285.41968 19.11735,-36.4747 20.97768,76.56974 -76.569736,-20.97768 z"
+       id="rect5116"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccc"
+       inkscape:export-filename="F:\Unity Projects\Painel de Controle Sebrae\Assets\UI\arrow.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"
+       transform="rotate(-45)" />
   </g>
 </svg>

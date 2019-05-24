@@ -14,6 +14,8 @@ namespace Command {
       float oldValue = VsnSaveSystem.GetFloatVariable(variableName.GetReference());
       float newValue = oldValue - valueToAdd.GetNumberValue();
 
+      Debug.LogWarning("Subtrair " + valueToAdd.GetNumberValue() + " de "+ variableName.GetReference());
+
       VsnSaveSystem.SetVariable(variableName.GetReference(), newValue);
       VsnSaveSystem.Save(0);
     }

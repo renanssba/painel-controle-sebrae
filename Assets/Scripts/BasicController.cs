@@ -11,7 +11,15 @@ public class BasicController : MonoBehaviour {
 
   private void Start() {
     instance = this;
+    UpdateUI();
     VsnAudioManager.instance.PlayMusic("song_intro", "song_loop");
+
+    if(VsnSaveSystem.GetIntVariable("minigame_played")==0) {
+      VsnController.instance.StartVSN("intro");
+    } else {
+      VsnSaveSystem.SetVariable("minigame_played", 0);
+      VsnController.instance.StartVSN("return_minigame");
+    }
   }
 
   void Update () {
@@ -19,4 +27,8 @@ public class BasicController : MonoBehaviour {
       SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 	}
+
+  void UpdateUI(){
+    VsnUIManager.instance.scoreText.text = VsnSaveSystem.GetIntVariable("money").ToString();
+  }
 }

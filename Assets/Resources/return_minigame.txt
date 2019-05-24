@@ -1,0 +1,68 @@
+﻿
+set_timescale 1
+bg "2894"
+//set_var current_coins coins
+goto_script "jose_enter"
+
+say "José" "Você faturou \coins moedas. Mas lembre-se: este dinheiro não é seu ainda de fato. Ele é da empresa."
+
+say "Vamos agora saber qual deve ser seu pagamento e o lucro da empresa."
+
+goto_script "show_table"
+
+say "Você faturou \coins moedas."
+wait 0.4
+set_table_text "R$ \coins"
+wait 0.4
+
+say "Em seguida, É preciso tirar os impostos. Como você é MEI, sua guia é no valor de R$50."
+wait 0.4
+set_table_text "R$ \coins\n-R$ 50"
+wait 0.4
+
+
+say "Ok. Depois disso, precisamos retirar o custo que você pagou nos produtos. Para jogar o minigame foi necessário R$ 500."
+wait 0.4
+set_table_text "R$ \coins\n-R$ 50\n-R$ 500"
+wait 0.4
+
+
+subtract_var current_coins 550
+
+say "E por último, tem os gastos mensais que é preciso diminuir."
+
+waypoint choose_payment
+show_text_input "true" "Sobrou até agora \current_coins. Quanto desse valor você quer retirar como seu pagamento?"
+
+if number_input > current_coins
+  say "Infelizmente esse valor é maior do que sobrou após os gastos. Por favor escolha um valor inferior."
+  goto choose_payment
+else
+  subtract_var current_coins number_input
+endif
+
+
+wait 0.4
+set_table_text "R$ \coins\n-R$ 50\n-R$ 500\n-R$ \number_input"
+wait 0.4
+
+say "E pronto! Retirando isso tudo temos o lucro da sua empresa:"
+wait 0.4
+set_table_text "R$ \coins\n-R$ 50\n-R$ 500\n-R$ \number_input\nR$ \current_coins"
+wait 0.4
+
+say "O lucro é de R$ \current_coins."
+say "Muito bem! Agora você já sabe calcular o seu salário e o lucro da empresa. Utilize a ferramenta do Lucrei para contabilizar o seu lucro na prática."
+
+wait 1
+
+say "Ah, antes de ir para o Lucrei, vamos analisar os indicadores de resultados do seu negócio?"
+say "Primeiramente vamos falar do faturamento, esse indicador é simplesmente tudo que eu vendi no mês. É tudo que recebi."
+say "Agora, vamos pensar em lucratividade. Eu já conheço meu lucro e meu faturamento, então a lucratividade nada mais é que meu lucro dividido pelo meu faturamento em porcentagem."
+say "Por exemplo: se meu lucro é R$ 1000 e meu faturamento é R$ 4000, logo minha lucratividade é 1000/4000 que é igual a 25%."
+say "Calma...Calma... só faltam dois indicadores"
+say "Neste momento, precisamos entender o que é ponto de equilíbrio. Esse indicador é apenas quanto precisamos vender para não ficarmos no lucro e nem no prejuízo."
+say "Por fim, o fluxo de caixa é nosso quarto e último indicador de desempenho. Ele nada mais é que o dinheiro que entra e sai da empresa em forma de um fluxo"
+say "Pronto"
+
+goto_script "fade_out"

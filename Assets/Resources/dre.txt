@@ -1,8 +1,9 @@
-character tabela "tabela-dre-facil"
-char_alpha tabela 0 0
-char_alpha tabela 1 1
-wait 1
+goto_script "show_table"
 //char_move_x tabela 0.7
+
+
+/// TESTE
+//goto minigame
 
 say "É assim que eu calculo o meu lucro. Vamos começar com o valor que recebi este mês:"
 say "Eu recebi R$ 4000 com a venda dos produtos. Vou colocar aqui na tabela."
@@ -34,4 +35,11 @@ wait 0.4
 set_table_text "R$ 4000\n-R$ 50\n-R$ 800\n-R$ 2200\nR$ 950"
 wait 0.4
 
+waypoint minigame
 say "R$ 950. Olha só que lucro lindo!"
+
+/// EXPLICAR
+say "Agora vamos jogar um game para você testar na prática. Jogar este game custa 500 moedas (custo fixo), mas você pode ganhar muito mais por lá."
+goto_script "fade_out"
+load_scene "Minigame"
+wait 1

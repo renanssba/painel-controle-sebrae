@@ -1,0 +1,4 @@
+character tabela "tabela-dre-facil"
+char_alpha tabela 0 0
+char_alpha tabela 1 1
+wait 1

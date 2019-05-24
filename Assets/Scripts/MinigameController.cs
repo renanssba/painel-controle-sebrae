@@ -47,6 +47,9 @@ public class MinigameController : MonoBehaviour {
 
   public void FinishMinigame(){
     Time.timeScale = 0;
-    VsnController.instance.StartVSNContent("say \"FIM DO MINIGAME!\"", "custom");
+    VsnSaveSystem.SetVariable("coins", coins);
+    VsnSaveSystem.SetVariable("current_coins", coins);
+    VsnSaveSystem.SetVariable("minigame_played", 1);
+    VsnController.instance.StartVSNContent("say \"FIM DO MINIGAME!\"\nload_scene \"Main\"", "custom");
   }
 }

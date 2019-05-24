@@ -323,6 +323,7 @@ public class VsnUIManager : MonoBehaviour {
     VsnController.instance.state = ExecutionState.PLAYING;
     if(textInputField.text != ""){
       VsnSaveSystem.SetVariable("text_input", textInputField.text);
+      VsnSaveSystem.SetVariable("number_input", int.Parse(textInputField.text));
     }
     ShowTextInput(false);
   }

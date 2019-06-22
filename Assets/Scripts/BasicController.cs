@@ -4,6 +4,11 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using TMPro;
 
+
+/// <summary>
+/// Basic Controller of the scene. All it does is start VSN script "intro" (or "return_minigame"
+/// after the minigame is played and play the song.)
+/// </summary>
 public class BasicController : MonoBehaviour {
 
   public static BasicController instance;

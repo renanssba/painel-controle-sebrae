@@ -153,8 +153,8 @@ PlayerSettings:
     Android: com.SupernovaGames.Lucrei
     Standalone: com.Company.ProductName
   buildNumber:
-    iOS: 5
-  AndroidBundleVersionCode: 5
+    iOS: 6
+  AndroidBundleVersionCode: 6
   AndroidMinSdkVersion: 16
   AndroidTargetSdkVersion: 0
   AndroidPreferredInstallLocation: 1

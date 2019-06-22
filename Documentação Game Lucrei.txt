@@ -1,0 +1,41 @@
+﻿SOBRE O GAME EDUCATIVO DO LUCREI
+
+O segmento de game educativo do aplicativo Lucrei é uma ferramenta adicional que serve para educar o usuário sobre a utilidade de se conhecer seus indicadores e como calculá-los.
+
+Este segmento foi desenvolvido em C# na ferramenta de desenvolvimento de jogos aberta Unity, que é uma ferramenta aberta para qualquer desenvolvedor e não possui restrições quanto a utilização em sua versão gratuita. Em seguida o game desenvolvido foi exportado em linguagem HTML5, conforme requisitado pelo edital.
+
+O game é independente de qualquer plugin de terceiros, podendo ser executado em navegadores como Google Chorme, Mozilla Firefox e Microsoft Edge sem a necessidade de instalação de nenhum plugin ou aquisição de licença.
+
+
+
+SOBRE O CÓDIGO
+
+O código está versionado no endereço:
+https://github.com/renanssba/painel-controle-sebrae.git
+
+
+O projeto é desenvolvido em C# e com a ajuda de plugins de suporte gratuitos disponíveis para Unity, sendo eles: DOTween, TextMesh Pro e VSN.
+
+O fluxo principal do jogo é descrito no arquivo "Assets/Resources/intro.txt". Este código é escrito em linguagem de script VSN, e depois convertido para HTML pela engine. Após introduzir o microempreendedor José e uma breve conversa, o fluxo passa pelo script seguinte "Assets/Resources/dre.txt", depois para a cena do Minigame.
+
+No minigame, o fluxo é definido pelas classes "Assets/Scripts/MinigameController.cs", "Assets/Scripts/Hero.cs", "Assets/Scripts/Move.cs" e "Assets/Scripts/TimeCounter.cs".
+
+Após o minigame ter acabado, o fluxo volta para scripts VSN através dos arquivos "Assets/Scripts/return_minigame.txt". Esse é o último arquivo que define o fluxo final do jogo. Após isso, o minigame termina e é esperado que o usuário volte para o fluxo do aplicativo fechando a tela do jogo.
+
+
+
+Demais documentações sobre os códigos em específico podem ser encontradas nos arquivos de código.
+
+Demais documentações sobre a engine Unity podem ser encontradas em: https://docs.unity3d.com/Manual/index.html
+
+
+---
+
+
+Plugins utilizados:
+DOTween: https://assetstore.unity.com/packages/tools/animation/dotween-hotween-v2-27676
+TextMesh Pro: https://assetstore.unity.com/packages/essentials/beta-projects/textmesh-pro-84126
+VSN: https://github.com/renanssba/visual-supernovel
+
+Assets utilizados:
+Gráficos foram desenvolvidos na Hackathon com base em gráficos de licença gratuita, música é de licença aberta.

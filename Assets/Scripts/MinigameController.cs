@@ -2,6 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// MinigameController does some things like spawning coins, playing the song, counting the user
+/// score, etc. Also determines what to do after the time counter ends.
+/// </summary>
 public class MinigameController : MonoBehaviour {
 
   public GameObject coinPrefab;

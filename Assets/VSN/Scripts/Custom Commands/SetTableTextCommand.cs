@@ -4,6 +4,9 @@ using UnityEngine;
 
 namespace Command {
 
+  /// <summary>
+  /// This script fills the table's contents to show the user how to calculate Profit. 
+  /// </summary>
   [CommandAttribute(CommandString = "set_table_text")]
   public class SetTableTextCommand : VsnCommand {
 

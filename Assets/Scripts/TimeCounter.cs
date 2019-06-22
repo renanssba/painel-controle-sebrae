@@ -10,6 +10,10 @@ public enum TimeCounterAutoStart{
   autoStartCountup
 }
 
+
+/// <summary>
+/// This script counts the timer, it's used to determine when the minigame time is over.
+/// </summary>
 public class TimeCounter : MonoBehaviour {
 
   private bool countdown;

@@ -2,6 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
+/// <summary>
+/// Simple controller for the Wallet in the minigame. It moves the Wallet when the user moves
+/// the mouse around the screen. It also has a collider to detect when the wallet collides
+/// with a coin.
+/// </summary>
 public class Hero : MonoBehaviour {
 
   public float speed;
